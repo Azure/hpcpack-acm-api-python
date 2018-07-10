@@ -129,7 +129,7 @@ Class | Method | HTTP request | Description
  - [NodeMetadataNetworkIpv6](docs/NodeMetadataNetworkIpv6.md)
  - [NodeMetrics](docs/NodeMetrics.md)
  - [NodeMetricsData](docs/NodeMetricsData.md)
- - [NodeMetricsItems](docs/NodeMetricsItems.md)
+ - [NodeMetricsMetricItems](docs/NodeMetricsMetricItems.md)
  - [NodeNetwork](docs/NodeNetwork.md)
  - [NodeRegistration](docs/NodeRegistration.md)
  - [NodeSummary](docs/NodeSummary.md)

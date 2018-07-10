@@ -31,212 +31,68 @@ class JobSummary(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'queued': 'float',
-        'running': 'float',
-        'finishing': 'float',
-        'finished': 'float',
-        'canceling': 'float',
-        'canceled': 'float',
-        'failed': 'float'
+        'last_updated': 'datetime',
+        'data': 'dict(str, float)'
     }
 
     attribute_map = {
-        'queued': 'Queued',
-        'running': 'Running',
-        'finishing': 'Finishing',
-        'finished': 'Finished',
-        'canceling': 'Canceling',
-        'canceled': 'Canceled',
-        'failed': 'Failed'
+        'last_updated': 'lastUpdated',
+        'data': 'data'
     }
 
-    def __init__(self, queued=None, running=None, finishing=None, finished=None, canceling=None, canceled=None, failed=None):  # noqa: E501
+    def __init__(self, last_updated=None, data=None):  # noqa: E501
         """JobSummary - a model defined in Swagger"""  # noqa: E501
 
-        self._queued = None
-        self._running = None
-        self._finishing = None
-        self._finished = None
-        self._canceling = None
-        self._canceled = None
-        self._failed = None
+        self._last_updated = None
+        self._data = None
         self.discriminator = None
 
-        if queued is not None:
-            self.queued = queued
-        if running is not None:
-            self.running = running
-        if finishing is not None:
-            self.finishing = finishing
-        if finished is not None:
-            self.finished = finished
-        if canceling is not None:
-            self.canceling = canceling
-        if canceled is not None:
-            self.canceled = canceled
-        if failed is not None:
-            self.failed = failed
+        if last_updated is not None:
+            self.last_updated = last_updated
+        if data is not None:
+            self.data = data
 
     @property
-    def queued(self):
-        """Gets the queued of this JobSummary.  # noqa: E501
+    def last_updated(self):
+        """Gets the last_updated of this JobSummary.  # noqa: E501
 
-        number of jobs that are queued  # noqa: E501
 
-        :return: The queued of this JobSummary.  # noqa: E501
-        :rtype: float
+        :return: The last_updated of this JobSummary.  # noqa: E501
+        :rtype: datetime
         """
-        return self._queued
+        return self._last_updated
 
-    @queued.setter
-    def queued(self, queued):
-        """Sets the queued of this JobSummary.
+    @last_updated.setter
+    def last_updated(self, last_updated):
+        """Sets the last_updated of this JobSummary.
 
-        number of jobs that are queued  # noqa: E501
 
-        :param queued: The queued of this JobSummary.  # noqa: E501
-        :type: float
+        :param last_updated: The last_updated of this JobSummary.  # noqa: E501
+        :type: datetime
         """
 
-        self._queued = queued
+        self._last_updated = last_updated
 
     @property
-    def running(self):
-        """Gets the running of this JobSummary.  # noqa: E501
+    def data(self):
+        """Gets the data of this JobSummary.  # noqa: E501
 
-        number of jobs that are running  # noqa: E501
 
-        :return: The running of this JobSummary.  # noqa: E501
-        :rtype: float
+        :return: The data of this JobSummary.  # noqa: E501
+        :rtype: dict(str, float)
         """
-        return self._running
+        return self._data
 
-    @running.setter
-    def running(self, running):
-        """Sets the running of this JobSummary.
+    @data.setter
+    def data(self, data):
+        """Sets the data of this JobSummary.
 
-        number of jobs that are running  # noqa: E501
 
-        :param running: The running of this JobSummary.  # noqa: E501
-        :type: float
+        :param data: The data of this JobSummary.  # noqa: E501
+        :type: dict(str, float)
         """
 
-        self._running = running
-
-    @property
-    def finishing(self):
-        """Gets the finishing of this JobSummary.  # noqa: E501
-
-        number of jobs that are finishing  # noqa: E501
-
-        :return: The finishing of this JobSummary.  # noqa: E501
-        :rtype: float
-        """
-        return self._finishing
-
-    @finishing.setter
-    def finishing(self, finishing):
-        """Sets the finishing of this JobSummary.
-
-        number of jobs that are finishing  # noqa: E501
-
-        :param finishing: The finishing of this JobSummary.  # noqa: E501
-        :type: float
-        """
-
-        self._finishing = finishing
-
-    @property
-    def finished(self):
-        """Gets the finished of this JobSummary.  # noqa: E501
-
-        number of jobs that are finished  # noqa: E501
-
-        :return: The finished of this JobSummary.  # noqa: E501
-        :rtype: float
-        """
-        return self._finished
-
-    @finished.setter
-    def finished(self, finished):
-        """Sets the finished of this JobSummary.
-
-        number of jobs that are finished  # noqa: E501
-
-        :param finished: The finished of this JobSummary.  # noqa: E501
-        :type: float
-        """
-
-        self._finished = finished
-
-    @property
-    def canceling(self):
-        """Gets the canceling of this JobSummary.  # noqa: E501
-
-        number of jobs that are canceling  # noqa: E501
-
-        :return: The canceling of this JobSummary.  # noqa: E501
-        :rtype: float
-        """
-        return self._canceling
-
-    @canceling.setter
-    def canceling(self, canceling):
-        """Sets the canceling of this JobSummary.
-
-        number of jobs that are canceling  # noqa: E501
-
-        :param canceling: The canceling of this JobSummary.  # noqa: E501
-        :type: float
-        """
-
-        self._canceling = canceling
-
-    @property
-    def canceled(self):
-        """Gets the canceled of this JobSummary.  # noqa: E501
-
-        number of jobs that are canceled  # noqa: E501
-
-        :return: The canceled of this JobSummary.  # noqa: E501
-        :rtype: float
-        """
-        return self._canceled
-
-    @canceled.setter
-    def canceled(self, canceled):
-        """Sets the canceled of this JobSummary.
-
-        number of jobs that are canceled  # noqa: E501
-
-        :param canceled: The canceled of this JobSummary.  # noqa: E501
-        :type: float
-        """
-
-        self._canceled = canceled
-
-    @property
-    def failed(self):
-        """Gets the failed of this JobSummary.  # noqa: E501
-
-        number of jobs that are failed  # noqa: E501
-
-        :return: The failed of this JobSummary.  # noqa: E501
-        :rtype: float
-        """
-        return self._failed
-
-    @failed.setter
-    def failed(self, failed):
-        """Sets the failed of this JobSummary.
-
-        number of jobs that are failed  # noqa: E501
-
-        :param failed: The failed of this JobSummary.  # noqa: E501
-        :type: float
-        """
-
-        self._failed = failed
+        self._data = data
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -16,7 +16,7 @@ import re  # noqa: F401
 
 import six
 
-from hpc_acm.models.node_metrics_items import NodeMetricsItems  # noqa: F401,E501
+from hpc_acm.models.node_metrics_data import NodeMetricsData  # noqa: F401,E501
 
 
 class NodeMetrics(object):
@@ -33,70 +33,70 @@ class NodeMetrics(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'span': 'float',
-        'items': 'list[NodeMetricsItems]'
+        'range': 'float',
+        'data': 'list[NodeMetricsData]'
     }
 
     attribute_map = {
-        'span': 'span',
-        'items': 'items'
+        'range': 'range',
+        'data': 'data'
     }
 
-    def __init__(self, span=None, items=None):  # noqa: E501
+    def __init__(self, range=None, data=None):  # noqa: E501
         """NodeMetrics - a model defined in Swagger"""  # noqa: E501
 
-        self._span = None
-        self._items = None
+        self._range = None
+        self._data = None
         self.discriminator = None
 
-        if span is not None:
-            self.span = span
-        if items is not None:
-            self.items = items
+        if range is not None:
+            self.range = range
+        if data is not None:
+            self.data = data
 
     @property
-    def span(self):
-        """Gets the span of this NodeMetrics.  # noqa: E501
+    def range(self):
+        """Gets the range of this NodeMetrics.  # noqa: E501
 
         Time span in second of the metric data  # noqa: E501
 
-        :return: The span of this NodeMetrics.  # noqa: E501
+        :return: The range of this NodeMetrics.  # noqa: E501
         :rtype: float
         """
-        return self._span
+        return self._range
 
-    @span.setter
-    def span(self, span):
-        """Sets the span of this NodeMetrics.
+    @range.setter
+    def range(self, range):
+        """Sets the range of this NodeMetrics.
 
         Time span in second of the metric data  # noqa: E501
 
-        :param span: The span of this NodeMetrics.  # noqa: E501
+        :param range: The range of this NodeMetrics.  # noqa: E501
         :type: float
         """
 
-        self._span = span
+        self._range = range
 
     @property
-    def items(self):
-        """Gets the items of this NodeMetrics.  # noqa: E501
+    def data(self):
+        """Gets the data of this NodeMetrics.  # noqa: E501
 
 
-        :return: The items of this NodeMetrics.  # noqa: E501
-        :rtype: list[NodeMetricsItems]
+        :return: The data of this NodeMetrics.  # noqa: E501
+        :rtype: list[NodeMetricsData]
         """
-        return self._items
+        return self._data
 
-    @items.setter
-    def items(self, items):
-        """Sets the items of this NodeMetrics.
+    @data.setter
+    def data(self, data):
+        """Sets the data of this NodeMetrics.
 
 
-        :param items: The items of this NodeMetrics.  # noqa: E501
-        :type: list[NodeMetricsItems]
+        :param data: The data of this NodeMetrics.  # noqa: E501
+        :type: list[NodeMetricsData]
         """
 
-        self._items = items
+        self._data = data
 
     def to_dict(self):
         """Returns the model properties as a dict"""

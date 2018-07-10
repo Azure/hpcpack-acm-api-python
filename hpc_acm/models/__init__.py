@@ -40,7 +40,7 @@ from hpc_acm.models.node_metadata_network_ipv4_subnet import NodeMetadataNetwork
 from hpc_acm.models.node_metadata_network_ipv6 import NodeMetadataNetworkIpv6
 from hpc_acm.models.node_metrics import NodeMetrics
 from hpc_acm.models.node_metrics_data import NodeMetricsData
-from hpc_acm.models.node_metrics_items import NodeMetricsItems
+from hpc_acm.models.node_metrics_metric_items import NodeMetricsMetricItems
 from hpc_acm.models.node_network import NodeNetwork
 from hpc_acm.models.node_registration import NodeRegistration
 from hpc_acm.models.node_summary import NodeSummary
