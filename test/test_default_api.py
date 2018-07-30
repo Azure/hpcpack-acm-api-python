@@ -92,8 +92,8 @@ class TestDefaultApi(unittest.TestCase):
         """
         pass
 
-    def test_get_clusrun_output2(self):
-        """Test case for get_clusrun_output2
+    def test_get_clusrun_output_in_page(self):
+        """Test case for get_clusrun_output_in_page
 
         Get partial output of a task  # noqa: E501
         """

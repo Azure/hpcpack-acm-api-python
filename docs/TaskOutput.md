@@ -3,6 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**eof** | **bool** | Whether the end of output is reached | [optional] 
 **offset** | **int** | Distance between the start of the returned content and the start of the whole output | [optional] 
 **size** | **int** | Length of the content(in a unit meaningful only to the server, not in character of content) | [optional] 
 **content** | **str** | The output content | [optional] 

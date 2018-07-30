@@ -13,7 +13,7 @@ Method | HTTP request | Description
 [**get_clusrun_job_aggregation_result**](DefaultApi.md#get_clusrun_job_aggregation_result) | **GET** /clusrun/{id}/aggregationResult | Get aggregation result of a clusrun job
 [**get_clusrun_jobs**](DefaultApi.md#get_clusrun_jobs) | **GET** /clusrun | Get a list of clusruns
 [**get_clusrun_output**](DefaultApi.md#get_clusrun_output) | **GET** /output/clusrun/{key}/raw | Get the whole output of a task
-[**get_clusrun_output2**](DefaultApi.md#get_clusrun_output2) | **GET** /output/clusrun/{key}/page | Get partial output of a task
+[**get_clusrun_output_in_page**](DefaultApi.md#get_clusrun_output_in_page) | **GET** /output/clusrun/{key}/page | Get partial output of a task
 [**get_clusrun_task**](DefaultApi.md#get_clusrun_task) | **GET** /clusrun/{id}/tasks/{taskId} | Get a task of a clusrun
 [**get_clusrun_task_result**](DefaultApi.md#get_clusrun_task_result) | **GET** /clusrun/{id}/tasks/{taskId}/result | Get a task result of a clusrun
 [**get_clusrun_tasks**](DefaultApi.md#get_clusrun_tasks) | **GET** /clusrun/{id}/tasks | Get tasks of a clusrun
@@ -453,8 +453,8 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **get_clusrun_output2**
-> TaskOutput get_clusrun_output2(key, offset=offset, page_size=page_size)
+# **get_clusrun_output_in_page**
+> TaskOutput get_clusrun_output_in_page(key, offset=offset, page_size=page_size)
 
 Get partial output of a task
 
@@ -474,10 +474,10 @@ page_size = 56 # int | The size of requested piece of output (optional)
 
 try:
     # Get partial output of a task
-    api_response = api_instance.get_clusrun_output2(key, offset=offset, page_size=page_size)
+    api_response = api_instance.get_clusrun_output_in_page(key, offset=offset, page_size=page_size)
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling DefaultApi->get_clusrun_output2: %s\n" % e)
+    print("Exception when calling DefaultApi->get_clusrun_output_in_page: %s\n" % e)
 ```
 
 ### Parameters

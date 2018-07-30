@@ -31,31 +31,59 @@ class TaskOutput(object):
                             and the value is json key in definition.
     """
     swagger_types = {
+        'eof': 'bool',
         'offset': 'int',
         'size': 'int',
         'content': 'str'
     }
 
     attribute_map = {
+        'eof': 'eof',
         'offset': 'offset',
         'size': 'size',
         'content': 'content'
     }
 
-    def __init__(self, offset=None, size=None, content=None):  # noqa: E501
+    def __init__(self, eof=None, offset=None, size=None, content=None):  # noqa: E501
         """TaskOutput - a model defined in Swagger"""  # noqa: E501
 
+        self._eof = None
         self._offset = None
         self._size = None
         self._content = None
         self.discriminator = None
 
+        if eof is not None:
+            self.eof = eof
         if offset is not None:
             self.offset = offset
         if size is not None:
             self.size = size
         if content is not None:
             self.content = content
+
+    @property
+    def eof(self):
+        """Gets the eof of this TaskOutput.  # noqa: E501
+
+        Whether the end of output is reached  # noqa: E501
+
+        :return: The eof of this TaskOutput.  # noqa: E501
+        :rtype: bool
+        """
+        return self._eof
+
+    @eof.setter
+    def eof(self, eof):
+        """Sets the eof of this TaskOutput.
+
+        Whether the end of output is reached  # noqa: E501
+
+        :param eof: The eof of this TaskOutput.  # noqa: E501
+        :type: bool
+        """
+
+        self._eof = eof
 
     @property
     def offset(self):

@@ -902,12 +902,12 @@ class DefaultApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def get_clusrun_output2(self, key, **kwargs):  # noqa: E501
+    def get_clusrun_output_in_page(self, key, **kwargs):  # noqa: E501
         """Get partial output of a task  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async=True
-        >>> thread = api.get_clusrun_output2(key, async=True)
+        >>> thread = api.get_clusrun_output_in_page(key, async=True)
         >>> result = thread.get()
 
         :param async bool
@@ -920,17 +920,17 @@ class DefaultApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async'):
-            return self.get_clusrun_output2_with_http_info(key, **kwargs)  # noqa: E501
+            return self.get_clusrun_output_in_page_with_http_info(key, **kwargs)  # noqa: E501
         else:
-            (data) = self.get_clusrun_output2_with_http_info(key, **kwargs)  # noqa: E501
+            (data) = self.get_clusrun_output_in_page_with_http_info(key, **kwargs)  # noqa: E501
             return data
 
-    def get_clusrun_output2_with_http_info(self, key, **kwargs):  # noqa: E501
+    def get_clusrun_output_in_page_with_http_info(self, key, **kwargs):  # noqa: E501
         """Get partial output of a task  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async=True
-        >>> thread = api.get_clusrun_output2_with_http_info(key, async=True)
+        >>> thread = api.get_clusrun_output_in_page_with_http_info(key, async=True)
         >>> result = thread.get()
 
         :param async bool
@@ -953,14 +953,14 @@ class DefaultApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method get_clusrun_output2" % key
+                    " to method get_clusrun_output_in_page" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'key' is set
         if ('key' not in params or
                 params['key'] is None):
-            raise ValueError("Missing the required parameter `key` when calling `get_clusrun_output2`")  # noqa: E501
+            raise ValueError("Missing the required parameter `key` when calling `get_clusrun_output_in_page`")  # noqa: E501
 
         collection_formats = {}
 

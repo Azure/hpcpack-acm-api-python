@@ -78,7 +78,7 @@ Class | Method | HTTP request | Description
 *DefaultApi* | [**get_clusrun_job_aggregation_result**](docs/DefaultApi.md#get_clusrun_job_aggregation_result) | **GET** /clusrun/{id}/aggregationResult | Get aggregation result of a clusrun job
 *DefaultApi* | [**get_clusrun_jobs**](docs/DefaultApi.md#get_clusrun_jobs) | **GET** /clusrun | Get a list of clusruns
 *DefaultApi* | [**get_clusrun_output**](docs/DefaultApi.md#get_clusrun_output) | **GET** /output/clusrun/{key}/raw | Get the whole output of a task
-*DefaultApi* | [**get_clusrun_output2**](docs/DefaultApi.md#get_clusrun_output2) | **GET** /output/clusrun/{key}/page | Get partial output of a task
+*DefaultApi* | [**get_clusrun_output_in_page**](docs/DefaultApi.md#get_clusrun_output_in_page) | **GET** /output/clusrun/{key}/page | Get partial output of a task
 *DefaultApi* | [**get_clusrun_task**](docs/DefaultApi.md#get_clusrun_task) | **GET** /clusrun/{id}/tasks/{taskId} | Get a task of a clusrun
 *DefaultApi* | [**get_clusrun_task_result**](docs/DefaultApi.md#get_clusrun_task_result) | **GET** /clusrun/{id}/tasks/{taskId}/result | Get a task result of a clusrun
 *DefaultApi* | [**get_clusrun_tasks**](docs/DefaultApi.md#get_clusrun_tasks) | **GET** /clusrun/{id}/tasks | Get tasks of a clusrun
