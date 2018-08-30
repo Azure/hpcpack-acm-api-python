@@ -50,6 +50,10 @@ import time
 import hpc_acm
 from hpc_acm.rest import ApiException
 from pprint import pprint
+
+# Configure HTTP basic authorization: basic_auth
+hpc_acm.configuration.username = 'YOUR_USERNAME'
+hpc_acm.configuration.password = 'YOUR_PASSWORD'
 # create an instance of the API class
 api_instance = hpc_acm.DefaultApi()
 id = 56 # int | Job id
@@ -143,7 +147,10 @@ Class | Method | HTTP request | Description
 
 ## Documentation For Authorization
 
- All endpoints do not require authorization.
+
+## basic_auth
+
+- **Type**: HTTP basic authentication
 
 
 ## Author

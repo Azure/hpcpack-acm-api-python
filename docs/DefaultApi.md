@@ -50,8 +50,13 @@ import hpc_acm
 from hpc_acm.rest import ApiException
 from pprint import pprint
 
+# Configure HTTP basic authorization: basic_auth
+configuration = hpc_acm.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
+
 # create an instance of the API class
-api_instance = hpc_acm.DefaultApi()
+api_instance = hpc_acm.DefaultApi(hpc_acm.ApiClient(configuration))
 id = 56 # int | Job id
 job = hpc_acm.JobUpdate() # JobUpdate |  (optional)
 
@@ -75,7 +80,7 @@ void (empty response body)
 
 ### Authorization
 
-No authorization required
+[basic_auth](../README.md#basic_auth)
 
 ### HTTP request headers
 
@@ -97,8 +102,13 @@ import hpc_acm
 from hpc_acm.rest import ApiException
 from pprint import pprint
 
+# Configure HTTP basic authorization: basic_auth
+configuration = hpc_acm.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
+
 # create an instance of the API class
-api_instance = hpc_acm.DefaultApi()
+api_instance = hpc_acm.DefaultApi(hpc_acm.ApiClient(configuration))
 id = 56 # int | Job id
 job = hpc_acm.JobUpdate() # JobUpdate |  (optional)
 
@@ -122,7 +132,7 @@ void (empty response body)
 
 ### Authorization
 
-No authorization required
+[basic_auth](../README.md#basic_auth)
 
 ### HTTP request headers
 
@@ -144,8 +154,13 @@ import hpc_acm
 from hpc_acm.rest import ApiException
 from pprint import pprint
 
+# Configure HTTP basic authorization: basic_auth
+configuration = hpc_acm.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
+
 # create an instance of the API class
-api_instance = hpc_acm.DefaultApi()
+api_instance = hpc_acm.DefaultApi(hpc_acm.ApiClient(configuration))
 job = hpc_acm.Job() # Job |  (optional)
 
 try:
@@ -168,7 +183,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[basic_auth](../README.md#basic_auth)
 
 ### HTTP request headers
 
@@ -190,8 +205,13 @@ import hpc_acm
 from hpc_acm.rest import ApiException
 from pprint import pprint
 
+# Configure HTTP basic authorization: basic_auth
+configuration = hpc_acm.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
+
 # create an instance of the API class
-api_instance = hpc_acm.DefaultApi()
+api_instance = hpc_acm.DefaultApi(hpc_acm.ApiClient(configuration))
 job = hpc_acm.Job() # Job |  (optional)
 
 try:
@@ -214,7 +234,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[basic_auth](../README.md#basic_auth)
 
 ### HTTP request headers
 
@@ -236,8 +256,13 @@ import hpc_acm
 from hpc_acm.rest import ApiException
 from pprint import pprint
 
+# Configure HTTP basic authorization: basic_auth
+configuration = hpc_acm.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
+
 # create an instance of the API class
-api_instance = hpc_acm.DefaultApi()
+api_instance = hpc_acm.DefaultApi(hpc_acm.ApiClient(configuration))
 
 try:
     # Get summary of ClusRun jobs
@@ -256,7 +281,7 @@ This endpoint does not need any parameter.
 
 ### Authorization
 
-No authorization required
+[basic_auth](../README.md#basic_auth)
 
 ### HTTP request headers
 
@@ -278,8 +303,13 @@ import hpc_acm
 from hpc_acm.rest import ApiException
 from pprint import pprint
 
+# Configure HTTP basic authorization: basic_auth
+configuration = hpc_acm.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
+
 # create an instance of the API class
-api_instance = hpc_acm.DefaultApi()
+api_instance = hpc_acm.DefaultApi(hpc_acm.ApiClient(configuration))
 id = 56 # int | Job id
 
 try:
@@ -302,7 +332,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[basic_auth](../README.md#basic_auth)
 
 ### HTTP request headers
 
@@ -324,8 +354,13 @@ import hpc_acm
 from hpc_acm.rest import ApiException
 from pprint import pprint
 
+# Configure HTTP basic authorization: basic_auth
+configuration = hpc_acm.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
+
 # create an instance of the API class
-api_instance = hpc_acm.DefaultApi()
+api_instance = hpc_acm.DefaultApi(hpc_acm.ApiClient(configuration))
 id = 56 # int | Job id
 
 try:
@@ -348,7 +383,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[basic_auth](../README.md#basic_auth)
 
 ### HTTP request headers
 
@@ -370,8 +405,13 @@ import hpc_acm
 from hpc_acm.rest import ApiException
 from pprint import pprint
 
+# Configure HTTP basic authorization: basic_auth
+configuration = hpc_acm.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
+
 # create an instance of the API class
-api_instance = hpc_acm.DefaultApi()
+api_instance = hpc_acm.DefaultApi(hpc_acm.ApiClient(configuration))
 last_id = 56 # int | The object id since which(but not included) the objects are requested (optional)
 count = 1000 # int | Requested number of objects (optional) (default to 1000)
 reverse = false # bool | Get the results in reverse order (optional) (default to false)
@@ -398,7 +438,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[basic_auth](../README.md#basic_auth)
 
 ### HTTP request headers
 
@@ -420,8 +460,13 @@ import hpc_acm
 from hpc_acm.rest import ApiException
 from pprint import pprint
 
+# Configure HTTP basic authorization: basic_auth
+configuration = hpc_acm.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
+
 # create an instance of the API class
-api_instance = hpc_acm.DefaultApi()
+api_instance = hpc_acm.DefaultApi(hpc_acm.ApiClient(configuration))
 key = 'key_example' # str | Result key of a task
 
 try:
@@ -444,7 +489,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[basic_auth](../README.md#basic_auth)
 
 ### HTTP request headers
 
@@ -466,8 +511,13 @@ import hpc_acm
 from hpc_acm.rest import ApiException
 from pprint import pprint
 
+# Configure HTTP basic authorization: basic_auth
+configuration = hpc_acm.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
+
 # create an instance of the API class
-api_instance = hpc_acm.DefaultApi()
+api_instance = hpc_acm.DefaultApi(hpc_acm.ApiClient(configuration))
 key = 'key_example' # str | Result key of a task
 offset = 56 # int | The distance from the beginning of the output (optional)
 page_size = 56 # int | The size of requested piece of output (optional)
@@ -494,7 +544,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[basic_auth](../README.md#basic_auth)
 
 ### HTTP request headers
 
@@ -516,8 +566,13 @@ import hpc_acm
 from hpc_acm.rest import ApiException
 from pprint import pprint
 
+# Configure HTTP basic authorization: basic_auth
+configuration = hpc_acm.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
+
 # create an instance of the API class
-api_instance = hpc_acm.DefaultApi()
+api_instance = hpc_acm.DefaultApi(hpc_acm.ApiClient(configuration))
 id = 56 # int | Job id
 task_id = 56 # int | Task id
 
@@ -542,7 +597,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[basic_auth](../README.md#basic_auth)
 
 ### HTTP request headers
 
@@ -564,8 +619,13 @@ import hpc_acm
 from hpc_acm.rest import ApiException
 from pprint import pprint
 
+# Configure HTTP basic authorization: basic_auth
+configuration = hpc_acm.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
+
 # create an instance of the API class
-api_instance = hpc_acm.DefaultApi()
+api_instance = hpc_acm.DefaultApi(hpc_acm.ApiClient(configuration))
 id = 56 # int | Job id
 task_id = 56 # int | Task id
 
@@ -590,7 +650,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[basic_auth](../README.md#basic_auth)
 
 ### HTTP request headers
 
@@ -612,8 +672,13 @@ import hpc_acm
 from hpc_acm.rest import ApiException
 from pprint import pprint
 
+# Configure HTTP basic authorization: basic_auth
+configuration = hpc_acm.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
+
 # create an instance of the API class
-api_instance = hpc_acm.DefaultApi()
+api_instance = hpc_acm.DefaultApi(hpc_acm.ApiClient(configuration))
 id = 56 # int | Job id
 last_id = 56 # int | The object id since which(but not included) the objects are requested (optional)
 count = 1000 # int | Requested number of objects (optional) (default to 1000)
@@ -642,7 +707,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[basic_auth](../README.md#basic_auth)
 
 ### HTTP request headers
 
@@ -664,8 +729,13 @@ import hpc_acm
 from hpc_acm.rest import ApiException
 from pprint import pprint
 
+# Configure HTTP basic authorization: basic_auth
+configuration = hpc_acm.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
+
 # create an instance of the API class
-api_instance = hpc_acm.DefaultApi()
+api_instance = hpc_acm.DefaultApi(hpc_acm.ApiClient(configuration))
 id = 56 # int | Job id
 
 try:
@@ -688,7 +758,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[basic_auth](../README.md#basic_auth)
 
 ### HTTP request headers
 
@@ -710,8 +780,13 @@ import hpc_acm
 from hpc_acm.rest import ApiException
 from pprint import pprint
 
+# Configure HTTP basic authorization: basic_auth
+configuration = hpc_acm.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
+
 # create an instance of the API class
-api_instance = hpc_acm.DefaultApi()
+api_instance = hpc_acm.DefaultApi(hpc_acm.ApiClient(configuration))
 id = 56 # int | Job id
 
 try:
@@ -734,7 +809,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[basic_auth](../README.md#basic_auth)
 
 ### HTTP request headers
 
@@ -756,8 +831,13 @@ import hpc_acm
 from hpc_acm.rest import ApiException
 from pprint import pprint
 
+# Configure HTTP basic authorization: basic_auth
+configuration = hpc_acm.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
+
 # create an instance of the API class
-api_instance = hpc_acm.DefaultApi()
+api_instance = hpc_acm.DefaultApi(hpc_acm.ApiClient(configuration))
 
 try:
     # Get summary of diagnostic jobs
@@ -776,7 +856,7 @@ This endpoint does not need any parameter.
 
 ### Authorization
 
-No authorization required
+[basic_auth](../README.md#basic_auth)
 
 ### HTTP request headers
 
@@ -798,8 +878,13 @@ import hpc_acm
 from hpc_acm.rest import ApiException
 from pprint import pprint
 
+# Configure HTTP basic authorization: basic_auth
+configuration = hpc_acm.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
+
 # create an instance of the API class
-api_instance = hpc_acm.DefaultApi()
+api_instance = hpc_acm.DefaultApi(hpc_acm.ApiClient(configuration))
 last_id = 56 # int | The object id since which(but not included) the objects are requested (optional)
 count = 1000 # int | Requested number of objects (optional) (default to 1000)
 reverse = false # bool | Get the results in reverse order (optional) (default to false)
@@ -826,7 +911,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[basic_auth](../README.md#basic_auth)
 
 ### HTTP request headers
 
@@ -848,8 +933,13 @@ import hpc_acm
 from hpc_acm.rest import ApiException
 from pprint import pprint
 
+# Configure HTTP basic authorization: basic_auth
+configuration = hpc_acm.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
+
 # create an instance of the API class
-api_instance = hpc_acm.DefaultApi()
+api_instance = hpc_acm.DefaultApi(hpc_acm.ApiClient(configuration))
 id = 56 # int | Job id
 task_id = 56 # int | Task id
 
@@ -874,7 +964,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[basic_auth](../README.md#basic_auth)
 
 ### HTTP request headers
 
@@ -896,8 +986,13 @@ import hpc_acm
 from hpc_acm.rest import ApiException
 from pprint import pprint
 
+# Configure HTTP basic authorization: basic_auth
+configuration = hpc_acm.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
+
 # create an instance of the API class
-api_instance = hpc_acm.DefaultApi()
+api_instance = hpc_acm.DefaultApi(hpc_acm.ApiClient(configuration))
 id = 56 # int | Job id
 task_id = 56 # int | Task id
 
@@ -922,7 +1017,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[basic_auth](../README.md#basic_auth)
 
 ### HTTP request headers
 
@@ -944,8 +1039,13 @@ import hpc_acm
 from hpc_acm.rest import ApiException
 from pprint import pprint
 
+# Configure HTTP basic authorization: basic_auth
+configuration = hpc_acm.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
+
 # create an instance of the API class
-api_instance = hpc_acm.DefaultApi()
+api_instance = hpc_acm.DefaultApi(hpc_acm.ApiClient(configuration))
 id = 56 # int | Job id
 last_id = 56 # int | The object id since which(but not included) the objects are requested (optional)
 count = 1000 # int | Requested number of objects (optional) (default to 1000)
@@ -974,7 +1074,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[basic_auth](../README.md#basic_auth)
 
 ### HTTP request headers
 
@@ -996,8 +1096,13 @@ import hpc_acm
 from hpc_acm.rest import ApiException
 from pprint import pprint
 
+# Configure HTTP basic authorization: basic_auth
+configuration = hpc_acm.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
+
 # create an instance of the API class
-api_instance = hpc_acm.DefaultApi()
+api_instance = hpc_acm.DefaultApi(hpc_acm.ApiClient(configuration))
 
 try:
     # Get available diagnostic tests
@@ -1016,7 +1121,7 @@ This endpoint does not need any parameter.
 
 ### Authorization
 
-No authorization required
+[basic_auth](../README.md#basic_auth)
 
 ### HTTP request headers
 
@@ -1038,8 +1143,13 @@ import hpc_acm
 from hpc_acm.rest import ApiException
 from pprint import pprint
 
+# Configure HTTP basic authorization: basic_auth
+configuration = hpc_acm.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
+
 # create an instance of the API class
-api_instance = hpc_acm.DefaultApi()
+api_instance = hpc_acm.DefaultApi(hpc_acm.ApiClient(configuration))
 
 try:
     # Get node metric categories
@@ -1058,7 +1168,7 @@ This endpoint does not need any parameter.
 
 ### Authorization
 
-No authorization required
+[basic_auth](../README.md#basic_auth)
 
 ### HTTP request headers
 
@@ -1080,8 +1190,13 @@ import hpc_acm
 from hpc_acm.rest import ApiException
 from pprint import pprint
 
+# Configure HTTP basic authorization: basic_auth
+configuration = hpc_acm.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
+
 # create an instance of the API class
-api_instance = hpc_acm.DefaultApi()
+api_instance = hpc_acm.DefaultApi(hpc_acm.ApiClient(configuration))
 category = 'category_example' # str | 
 last_node_id = 'last_node_id_example' # str |  (optional)
 count = 1000 # int | Requested number of objects (optional) (default to 1000)
@@ -1108,7 +1223,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[basic_auth](../README.md#basic_auth)
 
 ### HTTP request headers
 
@@ -1130,8 +1245,13 @@ import hpc_acm
 from hpc_acm.rest import ApiException
 from pprint import pprint
 
+# Configure HTTP basic authorization: basic_auth
+configuration = hpc_acm.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
+
 # create an instance of the API class
-api_instance = hpc_acm.DefaultApi()
+api_instance = hpc_acm.DefaultApi(hpc_acm.ApiClient(configuration))
 id = 'id_example' # str | Node id
 
 try:
@@ -1154,7 +1274,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[basic_auth](../README.md#basic_auth)
 
 ### HTTP request headers
 
@@ -1176,8 +1296,13 @@ import hpc_acm
 from hpc_acm.rest import ApiException
 from pprint import pprint
 
+# Configure HTTP basic authorization: basic_auth
+configuration = hpc_acm.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
+
 # create an instance of the API class
-api_instance = hpc_acm.DefaultApi()
+api_instance = hpc_acm.DefaultApi(hpc_acm.ApiClient(configuration))
 id = 'id_example' # str | Node id
 
 try:
@@ -1200,7 +1325,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[basic_auth](../README.md#basic_auth)
 
 ### HTTP request headers
 
@@ -1222,8 +1347,13 @@ import hpc_acm
 from hpc_acm.rest import ApiException
 from pprint import pprint
 
+# Configure HTTP basic authorization: basic_auth
+configuration = hpc_acm.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
+
 # create an instance of the API class
-api_instance = hpc_acm.DefaultApi()
+api_instance = hpc_acm.DefaultApi(hpc_acm.ApiClient(configuration))
 id = 'id_example' # str | Node id
 
 try:
@@ -1246,7 +1376,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[basic_auth](../README.md#basic_auth)
 
 ### HTTP request headers
 
@@ -1268,8 +1398,13 @@ import hpc_acm
 from hpc_acm.rest import ApiException
 from pprint import pprint
 
+# Configure HTTP basic authorization: basic_auth
+configuration = hpc_acm.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
+
 # create an instance of the API class
-api_instance = hpc_acm.DefaultApi()
+api_instance = hpc_acm.DefaultApi(hpc_acm.ApiClient(configuration))
 id = 'id_example' # str | Node id
 
 try:
@@ -1292,7 +1427,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[basic_auth](../README.md#basic_auth)
 
 ### HTTP request headers
 
@@ -1314,8 +1449,13 @@ import hpc_acm
 from hpc_acm.rest import ApiException
 from pprint import pprint
 
+# Configure HTTP basic authorization: basic_auth
+configuration = hpc_acm.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
+
 # create an instance of the API class
-api_instance = hpc_acm.DefaultApi()
+api_instance = hpc_acm.DefaultApi(hpc_acm.ApiClient(configuration))
 id = 'id_example' # str | Node id
 
 try:
@@ -1338,7 +1478,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[basic_auth](../README.md#basic_auth)
 
 ### HTTP request headers
 
@@ -1360,8 +1500,13 @@ import hpc_acm
 from hpc_acm.rest import ApiException
 from pprint import pprint
 
+# Configure HTTP basic authorization: basic_auth
+configuration = hpc_acm.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
+
 # create an instance of the API class
-api_instance = hpc_acm.DefaultApi()
+api_instance = hpc_acm.DefaultApi(hpc_acm.ApiClient(configuration))
 id = 'id_example' # str | Node id
 
 try:
@@ -1384,7 +1529,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[basic_auth](../README.md#basic_auth)
 
 ### HTTP request headers
 
@@ -1406,8 +1551,13 @@ import hpc_acm
 from hpc_acm.rest import ApiException
 from pprint import pprint
 
+# Configure HTTP basic authorization: basic_auth
+configuration = hpc_acm.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
+
 # create an instance of the API class
-api_instance = hpc_acm.DefaultApi()
+api_instance = hpc_acm.DefaultApi(hpc_acm.ApiClient(configuration))
 
 try:
     # Get summary of nodes
@@ -1426,7 +1576,7 @@ This endpoint does not need any parameter.
 
 ### Authorization
 
-No authorization required
+[basic_auth](../README.md#basic_auth)
 
 ### HTTP request headers
 
@@ -1448,8 +1598,13 @@ import hpc_acm
 from hpc_acm.rest import ApiException
 from pprint import pprint
 
+# Configure HTTP basic authorization: basic_auth
+configuration = hpc_acm.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
+
 # create an instance of the API class
-api_instance = hpc_acm.DefaultApi()
+api_instance = hpc_acm.DefaultApi(hpc_acm.ApiClient(configuration))
 last_id = 56 # int | The object id since which(but not included) the objects are requested (optional)
 count = 1000 # int | Requested number of objects (optional) (default to 1000)
 
@@ -1474,7 +1629,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[basic_auth](../README.md#basic_auth)
 
 ### HTTP request headers
 
