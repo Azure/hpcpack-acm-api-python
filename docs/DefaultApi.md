@@ -1,6 +1,6 @@
 # hpc_acm.DefaultApi
 
-All URIs are relative to *http://localhost/v1*
+All URIs are relative to *https://localhost/v1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
