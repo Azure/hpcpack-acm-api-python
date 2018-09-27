@@ -82,6 +82,8 @@ Class | Method | HTTP request | Description
 *DefaultApi* | [**get_node_scheduled_events**](docs/DefaultApi.md#get_node_scheduled_events) | **GET** /nodes/{id}/scheduledEvents | get scheduled events of a node
 *DefaultApi* | [**get_node_summary**](docs/DefaultApi.md#get_node_summary) | **GET** /dashboard/nodes | Get summary of nodes
 *DefaultApi* | [**get_nodes**](docs/DefaultApi.md#get_nodes) | **GET** /nodes | Get a list of nodes
+*DefaultApi* | [**sync_scripts**](docs/DefaultApi.md#sync_scripts) | **POST** /sync | Sync diagnostic and metric scripts from GitHub
+*DefaultApi* | [**validate_user**](docs/DefaultApi.md#validate_user) | **GET** /validation | Validate user confidential for HTTP Basic Auth
 
 
 ## Documentation For Models

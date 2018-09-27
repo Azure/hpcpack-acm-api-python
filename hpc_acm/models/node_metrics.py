@@ -33,49 +33,49 @@ class NodeMetrics(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'range': 'float',
+        'range_seconds': 'float',
         'data': 'list[NodeMetricsData]'
     }
 
     attribute_map = {
-        'range': 'range',
+        'range_seconds': 'rangeSeconds',
         'data': 'data'
     }
 
-    def __init__(self, range=None, data=None):  # noqa: E501
+    def __init__(self, range_seconds=None, data=None):  # noqa: E501
         """NodeMetrics - a model defined in Swagger"""  # noqa: E501
 
-        self._range = None
+        self._range_seconds = None
         self._data = None
         self.discriminator = None
 
-        if range is not None:
-            self.range = range
+        if range_seconds is not None:
+            self.range_seconds = range_seconds
         if data is not None:
             self.data = data
 
     @property
-    def range(self):
-        """Gets the range of this NodeMetrics.  # noqa: E501
+    def range_seconds(self):
+        """Gets the range_seconds of this NodeMetrics.  # noqa: E501
 
         Time span in second of the metric data  # noqa: E501
 
-        :return: The range of this NodeMetrics.  # noqa: E501
+        :return: The range_seconds of this NodeMetrics.  # noqa: E501
         :rtype: float
         """
-        return self._range
+        return self._range_seconds
 
-    @range.setter
-    def range(self, range):
-        """Sets the range of this NodeMetrics.
+    @range_seconds.setter
+    def range_seconds(self, range_seconds):
+        """Sets the range_seconds of this NodeMetrics.
 
         Time span in second of the metric data  # noqa: E501
 
-        :param range: The range of this NodeMetrics.  # noqa: E501
+        :param range_seconds: The range_seconds of this NodeMetrics.  # noqa: E501
         :type: float
         """
 
-        self._range = range
+        self._range_seconds = range_seconds
 
     @property
     def data(self):

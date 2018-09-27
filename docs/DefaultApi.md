@@ -35,6 +35,8 @@ Method | HTTP request | Description
 [**get_node_scheduled_events**](DefaultApi.md#get_node_scheduled_events) | **GET** /nodes/{id}/scheduledEvents | get scheduled events of a node
 [**get_node_summary**](DefaultApi.md#get_node_summary) | **GET** /dashboard/nodes | Get summary of nodes
 [**get_nodes**](DefaultApi.md#get_nodes) | **GET** /nodes | Get a list of nodes
+[**sync_scripts**](DefaultApi.md#sync_scripts) | **POST** /sync | Sync diagnostic and metric scripts from GitHub
+[**validate_user**](DefaultApi.md#validate_user) | **GET** /validation | Validate user confidential for HTTP Basic Auth
 
 
 # **cancel_clusrun_job**
@@ -1626,6 +1628,98 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**list[Node]**](Node.md)
+
+### Authorization
+
+[basic_auth](../README.md#basic_auth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **sync_scripts**
+> sync_scripts()
+
+Sync diagnostic and metric scripts from GitHub
+
+### Example
+```python
+from __future__ import print_function
+import time
+import hpc_acm
+from hpc_acm.rest import ApiException
+from pprint import pprint
+
+# Configure HTTP basic authorization: basic_auth
+configuration = hpc_acm.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
+
+# create an instance of the API class
+api_instance = hpc_acm.DefaultApi(hpc_acm.ApiClient(configuration))
+
+try:
+    # Sync diagnostic and metric scripts from GitHub
+    api_instance.sync_scripts()
+except ApiException as e:
+    print("Exception when calling DefaultApi->sync_scripts: %s\n" % e)
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[basic_auth](../README.md#basic_auth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **validate_user**
+> validate_user()
+
+Validate user confidential for HTTP Basic Auth
+
+### Example
+```python
+from __future__ import print_function
+import time
+import hpc_acm
+from hpc_acm.rest import ApiException
+from pprint import pprint
+
+# Configure HTTP basic authorization: basic_auth
+configuration = hpc_acm.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
+
+# create an instance of the API class
+api_instance = hpc_acm.DefaultApi(hpc_acm.ApiClient(configuration))
+
+try:
+    # Validate user confidential for HTTP Basic Auth
+    api_instance.validate_user()
+except ApiException as e:
+    print("Exception when calling DefaultApi->validate_user: %s\n" % e)
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+void (empty response body)
 
 ### Authorization
 
