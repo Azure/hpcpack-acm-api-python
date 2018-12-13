@@ -28,9 +28,8 @@ from pprint import pprint
 
 # Set your API Base Point
 hpc_acm.configuration.host = 'https://YOUR_SERVER_NAME/YOUR_PATH'
-# Configure HTTP basic authorization: basic_auth
-hpc_acm.configuration.username = 'YOUR_USERNAME'
-hpc_acm.configuration.password = 'YOUR_PASSWORD'
+# Configure OAuth2 access token for authorization: aad
+hpc_acm.configuration.access_token = 'YOUR_ACCESS_TOKEN'
 # create an instance of the API class
 api_instance = hpc_acm.DefaultApi()
 

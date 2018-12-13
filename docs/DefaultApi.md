@@ -52,10 +52,9 @@ import hpc_acm
 from hpc_acm.rest import ApiException
 from pprint import pprint
 
-# Configure HTTP basic authorization: basic_auth
+# Configure OAuth2 access token for authorization: aad
 configuration = hpc_acm.Configuration()
-configuration.username = 'YOUR_USERNAME'
-configuration.password = 'YOUR_PASSWORD'
+configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
 api_instance = hpc_acm.DefaultApi(hpc_acm.ApiClient(configuration))
@@ -82,7 +81,7 @@ void (empty response body)
 
 ### Authorization
 
-[basic_auth](../README.md#basic_auth)
+[aad](../README.md#aad)
 
 ### HTTP request headers
 
@@ -104,10 +103,9 @@ import hpc_acm
 from hpc_acm.rest import ApiException
 from pprint import pprint
 
-# Configure HTTP basic authorization: basic_auth
+# Configure OAuth2 access token for authorization: aad
 configuration = hpc_acm.Configuration()
-configuration.username = 'YOUR_USERNAME'
-configuration.password = 'YOUR_PASSWORD'
+configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
 api_instance = hpc_acm.DefaultApi(hpc_acm.ApiClient(configuration))
@@ -134,7 +132,7 @@ void (empty response body)
 
 ### Authorization
 
-[basic_auth](../README.md#basic_auth)
+[aad](../README.md#aad)
 
 ### HTTP request headers
 
@@ -156,10 +154,9 @@ import hpc_acm
 from hpc_acm.rest import ApiException
 from pprint import pprint
 
-# Configure HTTP basic authorization: basic_auth
+# Configure OAuth2 access token for authorization: aad
 configuration = hpc_acm.Configuration()
-configuration.username = 'YOUR_USERNAME'
-configuration.password = 'YOUR_PASSWORD'
+configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
 api_instance = hpc_acm.DefaultApi(hpc_acm.ApiClient(configuration))
@@ -185,7 +182,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[basic_auth](../README.md#basic_auth)
+[aad](../README.md#aad)
 
 ### HTTP request headers
 
@@ -207,10 +204,9 @@ import hpc_acm
 from hpc_acm.rest import ApiException
 from pprint import pprint
 
-# Configure HTTP basic authorization: basic_auth
+# Configure OAuth2 access token for authorization: aad
 configuration = hpc_acm.Configuration()
-configuration.username = 'YOUR_USERNAME'
-configuration.password = 'YOUR_PASSWORD'
+configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
 api_instance = hpc_acm.DefaultApi(hpc_acm.ApiClient(configuration))
@@ -236,7 +232,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[basic_auth](../README.md#basic_auth)
+[aad](../README.md#aad)
 
 ### HTTP request headers
 
@@ -258,10 +254,9 @@ import hpc_acm
 from hpc_acm.rest import ApiException
 from pprint import pprint
 
-# Configure HTTP basic authorization: basic_auth
+# Configure OAuth2 access token for authorization: aad
 configuration = hpc_acm.Configuration()
-configuration.username = 'YOUR_USERNAME'
-configuration.password = 'YOUR_PASSWORD'
+configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
 api_instance = hpc_acm.DefaultApi(hpc_acm.ApiClient(configuration))
@@ -283,7 +278,7 @@ This endpoint does not need any parameter.
 
 ### Authorization
 
-[basic_auth](../README.md#basic_auth)
+[aad](../README.md#aad)
 
 ### HTTP request headers
 
@@ -305,10 +300,9 @@ import hpc_acm
 from hpc_acm.rest import ApiException
 from pprint import pprint
 
-# Configure HTTP basic authorization: basic_auth
+# Configure OAuth2 access token for authorization: aad
 configuration = hpc_acm.Configuration()
-configuration.username = 'YOUR_USERNAME'
-configuration.password = 'YOUR_PASSWORD'
+configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
 api_instance = hpc_acm.DefaultApi(hpc_acm.ApiClient(configuration))
@@ -334,7 +328,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[basic_auth](../README.md#basic_auth)
+[aad](../README.md#aad)
 
 ### HTTP request headers
 
@@ -356,10 +350,9 @@ import hpc_acm
 from hpc_acm.rest import ApiException
 from pprint import pprint
 
-# Configure HTTP basic authorization: basic_auth
+# Configure OAuth2 access token for authorization: aad
 configuration = hpc_acm.Configuration()
-configuration.username = 'YOUR_USERNAME'
-configuration.password = 'YOUR_PASSWORD'
+configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
 api_instance = hpc_acm.DefaultApi(hpc_acm.ApiClient(configuration))
@@ -385,7 +378,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[basic_auth](../README.md#basic_auth)
+[aad](../README.md#aad)
 
 ### HTTP request headers
 
@@ -407,10 +400,9 @@ import hpc_acm
 from hpc_acm.rest import ApiException
 from pprint import pprint
 
-# Configure HTTP basic authorization: basic_auth
+# Configure OAuth2 access token for authorization: aad
 configuration = hpc_acm.Configuration()
-configuration.username = 'YOUR_USERNAME'
-configuration.password = 'YOUR_PASSWORD'
+configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
 api_instance = hpc_acm.DefaultApi(hpc_acm.ApiClient(configuration))
@@ -440,7 +432,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[basic_auth](../README.md#basic_auth)
+[aad](../README.md#aad)
 
 ### HTTP request headers
 
@@ -462,10 +454,9 @@ import hpc_acm
 from hpc_acm.rest import ApiException
 from pprint import pprint
 
-# Configure HTTP basic authorization: basic_auth
+# Configure OAuth2 access token for authorization: aad
 configuration = hpc_acm.Configuration()
-configuration.username = 'YOUR_USERNAME'
-configuration.password = 'YOUR_PASSWORD'
+configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
 api_instance = hpc_acm.DefaultApi(hpc_acm.ApiClient(configuration))
@@ -491,7 +482,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[basic_auth](../README.md#basic_auth)
+[aad](../README.md#aad)
 
 ### HTTP request headers
 
@@ -513,10 +504,9 @@ import hpc_acm
 from hpc_acm.rest import ApiException
 from pprint import pprint
 
-# Configure HTTP basic authorization: basic_auth
+# Configure OAuth2 access token for authorization: aad
 configuration = hpc_acm.Configuration()
-configuration.username = 'YOUR_USERNAME'
-configuration.password = 'YOUR_PASSWORD'
+configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
 api_instance = hpc_acm.DefaultApi(hpc_acm.ApiClient(configuration))
@@ -546,7 +536,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[basic_auth](../README.md#basic_auth)
+[aad](../README.md#aad)
 
 ### HTTP request headers
 
@@ -568,10 +558,9 @@ import hpc_acm
 from hpc_acm.rest import ApiException
 from pprint import pprint
 
-# Configure HTTP basic authorization: basic_auth
+# Configure OAuth2 access token for authorization: aad
 configuration = hpc_acm.Configuration()
-configuration.username = 'YOUR_USERNAME'
-configuration.password = 'YOUR_PASSWORD'
+configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
 api_instance = hpc_acm.DefaultApi(hpc_acm.ApiClient(configuration))
@@ -599,7 +588,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[basic_auth](../README.md#basic_auth)
+[aad](../README.md#aad)
 
 ### HTTP request headers
 
@@ -621,10 +610,9 @@ import hpc_acm
 from hpc_acm.rest import ApiException
 from pprint import pprint
 
-# Configure HTTP basic authorization: basic_auth
+# Configure OAuth2 access token for authorization: aad
 configuration = hpc_acm.Configuration()
-configuration.username = 'YOUR_USERNAME'
-configuration.password = 'YOUR_PASSWORD'
+configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
 api_instance = hpc_acm.DefaultApi(hpc_acm.ApiClient(configuration))
@@ -652,7 +640,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[basic_auth](../README.md#basic_auth)
+[aad](../README.md#aad)
 
 ### HTTP request headers
 
@@ -674,10 +662,9 @@ import hpc_acm
 from hpc_acm.rest import ApiException
 from pprint import pprint
 
-# Configure HTTP basic authorization: basic_auth
+# Configure OAuth2 access token for authorization: aad
 configuration = hpc_acm.Configuration()
-configuration.username = 'YOUR_USERNAME'
-configuration.password = 'YOUR_PASSWORD'
+configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
 api_instance = hpc_acm.DefaultApi(hpc_acm.ApiClient(configuration))
@@ -709,7 +696,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[basic_auth](../README.md#basic_auth)
+[aad](../README.md#aad)
 
 ### HTTP request headers
 
@@ -731,10 +718,9 @@ import hpc_acm
 from hpc_acm.rest import ApiException
 from pprint import pprint
 
-# Configure HTTP basic authorization: basic_auth
+# Configure OAuth2 access token for authorization: aad
 configuration = hpc_acm.Configuration()
-configuration.username = 'YOUR_USERNAME'
-configuration.password = 'YOUR_PASSWORD'
+configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
 api_instance = hpc_acm.DefaultApi(hpc_acm.ApiClient(configuration))
@@ -760,7 +746,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[basic_auth](../README.md#basic_auth)
+[aad](../README.md#aad)
 
 ### HTTP request headers
 
@@ -782,10 +768,9 @@ import hpc_acm
 from hpc_acm.rest import ApiException
 from pprint import pprint
 
-# Configure HTTP basic authorization: basic_auth
+# Configure OAuth2 access token for authorization: aad
 configuration = hpc_acm.Configuration()
-configuration.username = 'YOUR_USERNAME'
-configuration.password = 'YOUR_PASSWORD'
+configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
 api_instance = hpc_acm.DefaultApi(hpc_acm.ApiClient(configuration))
@@ -811,7 +796,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[basic_auth](../README.md#basic_auth)
+[aad](../README.md#aad)
 
 ### HTTP request headers
 
@@ -833,10 +818,9 @@ import hpc_acm
 from hpc_acm.rest import ApiException
 from pprint import pprint
 
-# Configure HTTP basic authorization: basic_auth
+# Configure OAuth2 access token for authorization: aad
 configuration = hpc_acm.Configuration()
-configuration.username = 'YOUR_USERNAME'
-configuration.password = 'YOUR_PASSWORD'
+configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
 api_instance = hpc_acm.DefaultApi(hpc_acm.ApiClient(configuration))
@@ -858,7 +842,7 @@ This endpoint does not need any parameter.
 
 ### Authorization
 
-[basic_auth](../README.md#basic_auth)
+[aad](../README.md#aad)
 
 ### HTTP request headers
 
@@ -880,10 +864,9 @@ import hpc_acm
 from hpc_acm.rest import ApiException
 from pprint import pprint
 
-# Configure HTTP basic authorization: basic_auth
+# Configure OAuth2 access token for authorization: aad
 configuration = hpc_acm.Configuration()
-configuration.username = 'YOUR_USERNAME'
-configuration.password = 'YOUR_PASSWORD'
+configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
 api_instance = hpc_acm.DefaultApi(hpc_acm.ApiClient(configuration))
@@ -913,7 +896,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[basic_auth](../README.md#basic_auth)
+[aad](../README.md#aad)
 
 ### HTTP request headers
 
@@ -935,10 +918,9 @@ import hpc_acm
 from hpc_acm.rest import ApiException
 from pprint import pprint
 
-# Configure HTTP basic authorization: basic_auth
+# Configure OAuth2 access token for authorization: aad
 configuration = hpc_acm.Configuration()
-configuration.username = 'YOUR_USERNAME'
-configuration.password = 'YOUR_PASSWORD'
+configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
 api_instance = hpc_acm.DefaultApi(hpc_acm.ApiClient(configuration))
@@ -966,7 +948,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[basic_auth](../README.md#basic_auth)
+[aad](../README.md#aad)
 
 ### HTTP request headers
 
@@ -988,10 +970,9 @@ import hpc_acm
 from hpc_acm.rest import ApiException
 from pprint import pprint
 
-# Configure HTTP basic authorization: basic_auth
+# Configure OAuth2 access token for authorization: aad
 configuration = hpc_acm.Configuration()
-configuration.username = 'YOUR_USERNAME'
-configuration.password = 'YOUR_PASSWORD'
+configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
 api_instance = hpc_acm.DefaultApi(hpc_acm.ApiClient(configuration))
@@ -1019,7 +1000,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[basic_auth](../README.md#basic_auth)
+[aad](../README.md#aad)
 
 ### HTTP request headers
 
@@ -1041,10 +1022,9 @@ import hpc_acm
 from hpc_acm.rest import ApiException
 from pprint import pprint
 
-# Configure HTTP basic authorization: basic_auth
+# Configure OAuth2 access token for authorization: aad
 configuration = hpc_acm.Configuration()
-configuration.username = 'YOUR_USERNAME'
-configuration.password = 'YOUR_PASSWORD'
+configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
 api_instance = hpc_acm.DefaultApi(hpc_acm.ApiClient(configuration))
@@ -1076,7 +1056,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[basic_auth](../README.md#basic_auth)
+[aad](../README.md#aad)
 
 ### HTTP request headers
 
@@ -1098,10 +1078,9 @@ import hpc_acm
 from hpc_acm.rest import ApiException
 from pprint import pprint
 
-# Configure HTTP basic authorization: basic_auth
+# Configure OAuth2 access token for authorization: aad
 configuration = hpc_acm.Configuration()
-configuration.username = 'YOUR_USERNAME'
-configuration.password = 'YOUR_PASSWORD'
+configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
 api_instance = hpc_acm.DefaultApi(hpc_acm.ApiClient(configuration))
@@ -1123,7 +1102,7 @@ This endpoint does not need any parameter.
 
 ### Authorization
 
-[basic_auth](../README.md#basic_auth)
+[aad](../README.md#aad)
 
 ### HTTP request headers
 
@@ -1145,10 +1124,9 @@ import hpc_acm
 from hpc_acm.rest import ApiException
 from pprint import pprint
 
-# Configure HTTP basic authorization: basic_auth
+# Configure OAuth2 access token for authorization: aad
 configuration = hpc_acm.Configuration()
-configuration.username = 'YOUR_USERNAME'
-configuration.password = 'YOUR_PASSWORD'
+configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
 api_instance = hpc_acm.DefaultApi(hpc_acm.ApiClient(configuration))
@@ -1170,7 +1148,7 @@ This endpoint does not need any parameter.
 
 ### Authorization
 
-[basic_auth](../README.md#basic_auth)
+[aad](../README.md#aad)
 
 ### HTTP request headers
 
@@ -1192,10 +1170,9 @@ import hpc_acm
 from hpc_acm.rest import ApiException
 from pprint import pprint
 
-# Configure HTTP basic authorization: basic_auth
+# Configure OAuth2 access token for authorization: aad
 configuration = hpc_acm.Configuration()
-configuration.username = 'YOUR_USERNAME'
-configuration.password = 'YOUR_PASSWORD'
+configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
 api_instance = hpc_acm.DefaultApi(hpc_acm.ApiClient(configuration))
@@ -1225,7 +1202,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[basic_auth](../README.md#basic_auth)
+[aad](../README.md#aad)
 
 ### HTTP request headers
 
@@ -1247,10 +1224,9 @@ import hpc_acm
 from hpc_acm.rest import ApiException
 from pprint import pprint
 
-# Configure HTTP basic authorization: basic_auth
+# Configure OAuth2 access token for authorization: aad
 configuration = hpc_acm.Configuration()
-configuration.username = 'YOUR_USERNAME'
-configuration.password = 'YOUR_PASSWORD'
+configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
 api_instance = hpc_acm.DefaultApi(hpc_acm.ApiClient(configuration))
@@ -1276,7 +1252,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[basic_auth](../README.md#basic_auth)
+[aad](../README.md#aad)
 
 ### HTTP request headers
 
@@ -1298,10 +1274,9 @@ import hpc_acm
 from hpc_acm.rest import ApiException
 from pprint import pprint
 
-# Configure HTTP basic authorization: basic_auth
+# Configure OAuth2 access token for authorization: aad
 configuration = hpc_acm.Configuration()
-configuration.username = 'YOUR_USERNAME'
-configuration.password = 'YOUR_PASSWORD'
+configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
 api_instance = hpc_acm.DefaultApi(hpc_acm.ApiClient(configuration))
@@ -1327,7 +1302,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[basic_auth](../README.md#basic_auth)
+[aad](../README.md#aad)
 
 ### HTTP request headers
 
@@ -1349,10 +1324,9 @@ import hpc_acm
 from hpc_acm.rest import ApiException
 from pprint import pprint
 
-# Configure HTTP basic authorization: basic_auth
+# Configure OAuth2 access token for authorization: aad
 configuration = hpc_acm.Configuration()
-configuration.username = 'YOUR_USERNAME'
-configuration.password = 'YOUR_PASSWORD'
+configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
 api_instance = hpc_acm.DefaultApi(hpc_acm.ApiClient(configuration))
@@ -1378,7 +1352,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[basic_auth](../README.md#basic_auth)
+[aad](../README.md#aad)
 
 ### HTTP request headers
 
@@ -1400,10 +1374,9 @@ import hpc_acm
 from hpc_acm.rest import ApiException
 from pprint import pprint
 
-# Configure HTTP basic authorization: basic_auth
+# Configure OAuth2 access token for authorization: aad
 configuration = hpc_acm.Configuration()
-configuration.username = 'YOUR_USERNAME'
-configuration.password = 'YOUR_PASSWORD'
+configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
 api_instance = hpc_acm.DefaultApi(hpc_acm.ApiClient(configuration))
@@ -1429,7 +1402,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[basic_auth](../README.md#basic_auth)
+[aad](../README.md#aad)
 
 ### HTTP request headers
 
@@ -1451,10 +1424,9 @@ import hpc_acm
 from hpc_acm.rest import ApiException
 from pprint import pprint
 
-# Configure HTTP basic authorization: basic_auth
+# Configure OAuth2 access token for authorization: aad
 configuration = hpc_acm.Configuration()
-configuration.username = 'YOUR_USERNAME'
-configuration.password = 'YOUR_PASSWORD'
+configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
 api_instance = hpc_acm.DefaultApi(hpc_acm.ApiClient(configuration))
@@ -1480,7 +1452,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[basic_auth](../README.md#basic_auth)
+[aad](../README.md#aad)
 
 ### HTTP request headers
 
@@ -1502,10 +1474,9 @@ import hpc_acm
 from hpc_acm.rest import ApiException
 from pprint import pprint
 
-# Configure HTTP basic authorization: basic_auth
+# Configure OAuth2 access token for authorization: aad
 configuration = hpc_acm.Configuration()
-configuration.username = 'YOUR_USERNAME'
-configuration.password = 'YOUR_PASSWORD'
+configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
 api_instance = hpc_acm.DefaultApi(hpc_acm.ApiClient(configuration))
@@ -1531,7 +1502,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[basic_auth](../README.md#basic_auth)
+[aad](../README.md#aad)
 
 ### HTTP request headers
 
@@ -1553,10 +1524,9 @@ import hpc_acm
 from hpc_acm.rest import ApiException
 from pprint import pprint
 
-# Configure HTTP basic authorization: basic_auth
+# Configure OAuth2 access token for authorization: aad
 configuration = hpc_acm.Configuration()
-configuration.username = 'YOUR_USERNAME'
-configuration.password = 'YOUR_PASSWORD'
+configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
 api_instance = hpc_acm.DefaultApi(hpc_acm.ApiClient(configuration))
@@ -1578,7 +1548,7 @@ This endpoint does not need any parameter.
 
 ### Authorization
 
-[basic_auth](../README.md#basic_auth)
+[aad](../README.md#aad)
 
 ### HTTP request headers
 
@@ -1600,10 +1570,9 @@ import hpc_acm
 from hpc_acm.rest import ApiException
 from pprint import pprint
 
-# Configure HTTP basic authorization: basic_auth
+# Configure OAuth2 access token for authorization: aad
 configuration = hpc_acm.Configuration()
-configuration.username = 'YOUR_USERNAME'
-configuration.password = 'YOUR_PASSWORD'
+configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
 api_instance = hpc_acm.DefaultApi(hpc_acm.ApiClient(configuration))
@@ -1631,7 +1600,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[basic_auth](../README.md#basic_auth)
+[aad](../README.md#aad)
 
 ### HTTP request headers
 
@@ -1653,10 +1622,9 @@ import hpc_acm
 from hpc_acm.rest import ApiException
 from pprint import pprint
 
-# Configure HTTP basic authorization: basic_auth
+# Configure OAuth2 access token for authorization: aad
 configuration = hpc_acm.Configuration()
-configuration.username = 'YOUR_USERNAME'
-configuration.password = 'YOUR_PASSWORD'
+configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
 api_instance = hpc_acm.DefaultApi(hpc_acm.ApiClient(configuration))
@@ -1677,7 +1645,7 @@ void (empty response body)
 
 ### Authorization
 
-[basic_auth](../README.md#basic_auth)
+[aad](../README.md#aad)
 
 ### HTTP request headers
 
@@ -1699,10 +1667,9 @@ import hpc_acm
 from hpc_acm.rest import ApiException
 from pprint import pprint
 
-# Configure HTTP basic authorization: basic_auth
+# Configure OAuth2 access token for authorization: aad
 configuration = hpc_acm.Configuration()
-configuration.username = 'YOUR_USERNAME'
-configuration.password = 'YOUR_PASSWORD'
+configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
 api_instance = hpc_acm.DefaultApi(hpc_acm.ApiClient(configuration))
@@ -1723,7 +1690,7 @@ void (empty response body)
 
 ### Authorization
 
-[basic_auth](../README.md#basic_auth)
+[aad](../README.md#aad)
 
 ### HTTP request headers
 

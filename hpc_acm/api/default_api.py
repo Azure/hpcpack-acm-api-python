@@ -116,7 +116,7 @@ class DefaultApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = ['basic_auth']  # noqa: E501
+        auth_settings = ['aad']  # noqa: E501
 
         return self.api_client.call_api(
             '/clusrun/{id}', 'PATCH',
@@ -217,7 +217,7 @@ class DefaultApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = ['basic_auth']  # noqa: E501
+        auth_settings = ['aad']  # noqa: E501
 
         return self.api_client.call_api(
             '/diagnostics/{id}', 'PATCH',
@@ -310,7 +310,7 @@ class DefaultApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = ['basic_auth']  # noqa: E501
+        auth_settings = ['aad']  # noqa: E501
 
         return self.api_client.call_api(
             '/clusrun', 'POST',
@@ -403,7 +403,7 @@ class DefaultApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = ['basic_auth']  # noqa: E501
+        auth_settings = ['aad']  # noqa: E501
 
         return self.api_client.call_api(
             '/diagnostics', 'POST',
@@ -492,7 +492,7 @@ class DefaultApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = ['basic_auth']  # noqa: E501
+        auth_settings = ['aad']  # noqa: E501
 
         return self.api_client.call_api(
             '/dashboard/clusrun', 'GET',
@@ -589,7 +589,7 @@ class DefaultApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = ['basic_auth']  # noqa: E501
+        auth_settings = ['aad']  # noqa: E501
 
         return self.api_client.call_api(
             '/clusrun/{id}', 'GET',
@@ -686,7 +686,7 @@ class DefaultApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = ['basic_auth']  # noqa: E501
+        auth_settings = ['aad']  # noqa: E501
 
         return self.api_client.call_api(
             '/clusrun/{id}/aggregationResult', 'GET',
@@ -787,7 +787,7 @@ class DefaultApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = ['basic_auth']  # noqa: E501
+        auth_settings = ['aad']  # noqa: E501
 
         return self.api_client.call_api(
             '/clusrun', 'GET',
@@ -884,7 +884,7 @@ class DefaultApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = ['basic_auth']  # noqa: E501
+        auth_settings = ['aad']  # noqa: E501
 
         return self.api_client.call_api(
             '/output/clusrun/{key}/raw', 'GET',
@@ -989,7 +989,7 @@ class DefaultApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = ['basic_auth']  # noqa: E501
+        auth_settings = ['aad']  # noqa: E501
 
         return self.api_client.call_api(
             '/output/clusrun/{key}/page', 'GET',
@@ -1094,7 +1094,7 @@ class DefaultApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = ['basic_auth']  # noqa: E501
+        auth_settings = ['aad']  # noqa: E501
 
         return self.api_client.call_api(
             '/clusrun/{id}/tasks/{taskId}', 'GET',
@@ -1199,7 +1199,7 @@ class DefaultApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = ['basic_auth']  # noqa: E501
+        auth_settings = ['aad']  # noqa: E501
 
         return self.api_client.call_api(
             '/clusrun/{id}/tasks/{taskId}/result', 'GET',
@@ -1308,7 +1308,7 @@ class DefaultApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = ['basic_auth']  # noqa: E501
+        auth_settings = ['aad']  # noqa: E501
 
         return self.api_client.call_api(
             '/clusrun/{id}/tasks', 'GET',
@@ -1405,7 +1405,7 @@ class DefaultApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = ['basic_auth']  # noqa: E501
+        auth_settings = ['aad']  # noqa: E501
 
         return self.api_client.call_api(
             '/diagnostics/{id}', 'GET',
@@ -1502,7 +1502,7 @@ class DefaultApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = ['basic_auth']  # noqa: E501
+        auth_settings = ['aad']  # noqa: E501
 
         return self.api_client.call_api(
             '/diagnostics/{id}/aggregationResult', 'GET',
@@ -1591,7 +1591,7 @@ class DefaultApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = ['basic_auth']  # noqa: E501
+        auth_settings = ['aad']  # noqa: E501
 
         return self.api_client.call_api(
             '/dashboard/diagnostics', 'GET',
@@ -1692,7 +1692,7 @@ class DefaultApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = ['basic_auth']  # noqa: E501
+        auth_settings = ['aad']  # noqa: E501
 
         return self.api_client.call_api(
             '/diagnostics', 'GET',
@@ -1797,7 +1797,7 @@ class DefaultApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = ['basic_auth']  # noqa: E501
+        auth_settings = ['aad']  # noqa: E501
 
         return self.api_client.call_api(
             '/diagnostics/{id}/tasks/{taskId}', 'GET',
@@ -1902,7 +1902,7 @@ class DefaultApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = ['basic_auth']  # noqa: E501
+        auth_settings = ['aad']  # noqa: E501
 
         return self.api_client.call_api(
             '/diagnostics/{id}/tasks/{taskId}/result', 'GET',
@@ -2011,7 +2011,7 @@ class DefaultApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = ['basic_auth']  # noqa: E501
+        auth_settings = ['aad']  # noqa: E501
 
         return self.api_client.call_api(
             '/diagnostics/{id}/tasks', 'GET',
@@ -2100,7 +2100,7 @@ class DefaultApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = ['basic_auth']  # noqa: E501
+        auth_settings = ['aad']  # noqa: E501
 
         return self.api_client.call_api(
             '/diagnostics/tests', 'GET',
@@ -2189,7 +2189,7 @@ class DefaultApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = ['basic_auth']  # noqa: E501
+        auth_settings = ['aad']  # noqa: E501
 
         return self.api_client.call_api(
             '/metrics/categories', 'GET',
@@ -2294,7 +2294,7 @@ class DefaultApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = ['basic_auth']  # noqa: E501
+        auth_settings = ['aad']  # noqa: E501
 
         return self.api_client.call_api(
             '/metrics/{category}', 'GET',
@@ -2391,7 +2391,7 @@ class DefaultApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = ['basic_auth']  # noqa: E501
+        auth_settings = ['aad']  # noqa: E501
 
         return self.api_client.call_api(
             '/nodes/{id}', 'GET',
@@ -2488,7 +2488,7 @@ class DefaultApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = ['basic_auth']  # noqa: E501
+        auth_settings = ['aad']  # noqa: E501
 
         return self.api_client.call_api(
             '/nodes/{id}/events', 'GET',
@@ -2585,7 +2585,7 @@ class DefaultApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = ['basic_auth']  # noqa: E501
+        auth_settings = ['aad']  # noqa: E501
 
         return self.api_client.call_api(
             '/nodes/{id}/jobs', 'GET',
@@ -2682,7 +2682,7 @@ class DefaultApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = ['basic_auth']  # noqa: E501
+        auth_settings = ['aad']  # noqa: E501
 
         return self.api_client.call_api(
             '/nodes/{id}/metadata', 'GET',
@@ -2779,7 +2779,7 @@ class DefaultApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = ['basic_auth']  # noqa: E501
+        auth_settings = ['aad']  # noqa: E501
 
         return self.api_client.call_api(
             '/nodes/{id}/metricHistory', 'GET',
@@ -2876,7 +2876,7 @@ class DefaultApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = ['basic_auth']  # noqa: E501
+        auth_settings = ['aad']  # noqa: E501
 
         return self.api_client.call_api(
             '/nodes/{id}/scheduledEvents', 'GET',
@@ -2965,7 +2965,7 @@ class DefaultApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = ['basic_auth']  # noqa: E501
+        auth_settings = ['aad']  # noqa: E501
 
         return self.api_client.call_api(
             '/dashboard/nodes', 'GET',
@@ -3062,7 +3062,7 @@ class DefaultApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = ['basic_auth']  # noqa: E501
+        auth_settings = ['aad']  # noqa: E501
 
         return self.api_client.call_api(
             '/nodes', 'GET',
@@ -3151,7 +3151,7 @@ class DefaultApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = ['basic_auth']  # noqa: E501
+        auth_settings = ['aad']  # noqa: E501
 
         return self.api_client.call_api(
             '/sync', 'POST',
@@ -3240,7 +3240,7 @@ class DefaultApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = ['basic_auth']  # noqa: E501
+        auth_settings = ['aad']  # noqa: E501
 
         return self.api_client.call_api(
             '/validation', 'GET',

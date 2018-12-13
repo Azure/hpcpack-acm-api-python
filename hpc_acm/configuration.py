@@ -61,6 +61,9 @@ class Configuration(six.with_metaclass(TypeWithDefault, object)):
         # Password for HTTP basic authentication
         self.password = ""
 
+        # access token for OAuth
+        self.access_token = ""
+
         # Logging Settings
         self.logger = {}
         self.logger["package_logger"] = logging.getLogger("hpc_acm")
@@ -224,12 +227,13 @@ class Configuration(six.with_metaclass(TypeWithDefault, object)):
         :return: The Auth Settings information dict.
         """
         return {
-            'basic_auth':
+
+            'aad':
                 {
-                    'type': 'basic',
+                    'type': 'oauth2',
                     'in': 'header',
                     'key': 'Authorization',
-                    'value': self.get_basic_auth_token()
+                    'value': 'Bearer ' + self.access_token
                 },
 
         }
