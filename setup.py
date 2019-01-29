@@ -3,7 +3,7 @@
 from setuptools import setup, find_packages  # noqa: H301
 
 NAME = "hpc-acm"
-VERSION = "1.2.0"
+VERSION = "1.3.0"
 REQUIRES = ["urllib3 >= 1.15", "six >= 1.10", "certifi", "python-dateutil"]
 
 with open("README.md", "r") as fh:

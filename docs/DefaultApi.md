@@ -9,6 +9,7 @@ Method | HTTP request | Description
 [**create_clusrun_job**](DefaultApi.md#create_clusrun_job) | **POST** /clusrun | Create a clusrun
 [**create_diagnostic_job**](DefaultApi.md#create_diagnostic_job) | **POST** /diagnostics | Create a diagnostic test run
 [**get_clus_run_job_summary**](DefaultApi.md#get_clus_run_job_summary) | **GET** /dashboard/clusrun | Get summary of ClusRun jobs
+[**get_clusrun_events**](DefaultApi.md#get_clusrun_events) | **GET** /clusrun/{id}/events | Get clusrun events
 [**get_clusrun_job**](DefaultApi.md#get_clusrun_job) | **GET** /clusrun/{id} | Get a clusrun
 [**get_clusrun_job_aggregation_result**](DefaultApi.md#get_clusrun_job_aggregation_result) | **GET** /clusrun/{id}/aggregationResult | Get aggregation result of a clusrun job
 [**get_clusrun_jobs**](DefaultApi.md#get_clusrun_jobs) | **GET** /clusrun | Get a list of clusruns
@@ -17,6 +18,7 @@ Method | HTTP request | Description
 [**get_clusrun_task**](DefaultApi.md#get_clusrun_task) | **GET** /clusrun/{id}/tasks/{taskId} | Get a task of a clusrun
 [**get_clusrun_task_result**](DefaultApi.md#get_clusrun_task_result) | **GET** /clusrun/{id}/tasks/{taskId}/result | Get a task result of a clusrun
 [**get_clusrun_tasks**](DefaultApi.md#get_clusrun_tasks) | **GET** /clusrun/{id}/tasks | Get tasks of a clusrun
+[**get_diagnostic_events**](DefaultApi.md#get_diagnostic_events) | **GET** /diagnostics/{id}/events | Get events of a diagnostic test run
 [**get_diagnostic_job**](DefaultApi.md#get_diagnostic_job) | **GET** /diagnostics/{id} | Get a diagnostic test run
 [**get_diagnostic_job_aggregation_result**](DefaultApi.md#get_diagnostic_job_aggregation_result) | **GET** /diagnostics/{id}/aggregationResult | Get aggregation result of a diagnostic job
 [**get_diagnostic_job_summary**](DefaultApi.md#get_diagnostic_job_summary) | **GET** /dashboard/diagnostics | Get summary of diagnostic jobs
@@ -36,7 +38,6 @@ Method | HTTP request | Description
 [**get_node_summary**](DefaultApi.md#get_node_summary) | **GET** /dashboard/nodes | Get summary of nodes
 [**get_nodes**](DefaultApi.md#get_nodes) | **GET** /nodes | Get a list of nodes
 [**sync_scripts**](DefaultApi.md#sync_scripts) | **POST** /sync | Sync diagnostic and metric scripts from GitHub
-[**validate_user**](DefaultApi.md#validate_user) | **GET** /validation | Validate user confidential for HTTP Basic Auth
 
 
 # **cancel_clusrun_job**
@@ -275,6 +276,60 @@ This endpoint does not need any parameter.
 ### Return type
 
 [**JobSummary**](JobSummary.md)
+
+### Authorization
+
+[aad](../README.md#aad)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **get_clusrun_events**
+> list[Event] get_clusrun_events(id, last_id=last_id, count=count)
+
+Get clusrun events
+
+### Example
+```python
+from __future__ import print_function
+import time
+import hpc_acm
+from hpc_acm.rest import ApiException
+from pprint import pprint
+
+# Configure OAuth2 access token for authorization: aad
+configuration = hpc_acm.Configuration()
+configuration.access_token = 'YOUR_ACCESS_TOKEN'
+
+# create an instance of the API class
+api_instance = hpc_acm.DefaultApi(hpc_acm.ApiClient(configuration))
+id = 56 # int | Job id
+last_id = 56 # int | The object id since which(but not included) the objects are requested (optional)
+count = 1000 # int | Requested number of objects (optional) (default to 1000)
+
+try:
+    # Get clusrun events
+    api_response = api_instance.get_clusrun_events(id, last_id=last_id, count=count)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling DefaultApi->get_clusrun_events: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **int**| Job id | 
+ **last_id** | **int**| The object id since which(but not included) the objects are requested | [optional] 
+ **count** | **int**| Requested number of objects | [optional] [default to 1000]
+
+### Return type
+
+[**list[Event]**](Event.md)
 
 ### Authorization
 
@@ -693,6 +748,60 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**list[Task]**](Task.md)
+
+### Authorization
+
+[aad](../README.md#aad)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **get_diagnostic_events**
+> list[Event] get_diagnostic_events(id, last_id=last_id, count=count)
+
+Get events of a diagnostic test run
+
+### Example
+```python
+from __future__ import print_function
+import time
+import hpc_acm
+from hpc_acm.rest import ApiException
+from pprint import pprint
+
+# Configure OAuth2 access token for authorization: aad
+configuration = hpc_acm.Configuration()
+configuration.access_token = 'YOUR_ACCESS_TOKEN'
+
+# create an instance of the API class
+api_instance = hpc_acm.DefaultApi(hpc_acm.ApiClient(configuration))
+id = 56 # int | Job id
+last_id = 56 # int | The object id since which(but not included) the objects are requested (optional)
+count = 1000 # int | Requested number of objects (optional) (default to 1000)
+
+try:
+    # Get events of a diagnostic test run
+    api_response = api_instance.get_diagnostic_events(id, last_id=last_id, count=count)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling DefaultApi->get_diagnostic_events: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **int**| Job id | 
+ **last_id** | **int**| The object id since which(but not included) the objects are requested | [optional] 
+ **count** | **int**| Requested number of objects | [optional] [default to 1000]
+
+### Return type
+
+[**list[Event]**](Event.md)
 
 ### Authorization
 
@@ -1576,7 +1685,7 @@ configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
 api_instance = hpc_acm.DefaultApi(hpc_acm.ApiClient(configuration))
-last_id = 56 # int | The object id since which(but not included) the objects are requested (optional)
+last_id = 'last_id_example' # str |  (optional)
 count = 1000 # int | Requested number of objects (optional) (default to 1000)
 
 try:
@@ -1591,7 +1700,7 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **last_id** | **int**| The object id since which(but not included) the objects are requested | [optional] 
+ **last_id** | **str**|  | [optional] 
  **count** | **int**| Requested number of objects | [optional] [default to 1000]
 
 ### Return type
@@ -1634,51 +1743,6 @@ try:
     api_instance.sync_scripts()
 except ApiException as e:
     print("Exception when calling DefaultApi->sync_scripts: %s\n" % e)
-```
-
-### Parameters
-This endpoint does not need any parameter.
-
-### Return type
-
-void (empty response body)
-
-### Authorization
-
-[aad](../README.md#aad)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **validate_user**
-> validate_user()
-
-Validate user confidential for HTTP Basic Auth
-
-### Example
-```python
-from __future__ import print_function
-import time
-import hpc_acm
-from hpc_acm.rest import ApiException
-from pprint import pprint
-
-# Configure OAuth2 access token for authorization: aad
-configuration = hpc_acm.Configuration()
-configuration.access_token = 'YOUR_ACCESS_TOKEN'
-
-# create an instance of the API class
-api_instance = hpc_acm.DefaultApi(hpc_acm.ApiClient(configuration))
-
-try:
-    # Validate user confidential for HTTP Basic Auth
-    api_instance.validate_user()
-except ApiException as e:
-    print("Exception when calling DefaultApi->validate_user: %s\n" % e)
 ```
 
 ### Parameters

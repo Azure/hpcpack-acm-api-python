@@ -31,6 +31,7 @@ class Event(object):
                             and the value is json key in definition.
     """
     swagger_types = {
+        'id': 'int',
         'content': 'str',
         'time': 'datetime',
         'type': 'str',
@@ -38,21 +39,25 @@ class Event(object):
     }
 
     attribute_map = {
+        'id': 'id',
         'content': 'content',
         'time': 'time',
         'type': 'type',
         'source': 'source'
     }
 
-    def __init__(self, content=None, time=None, type=None, source=None):  # noqa: E501
+    def __init__(self, id=None, content=None, time=None, type=None, source=None):  # noqa: E501
         """Event - a model defined in Swagger"""  # noqa: E501
 
+        self._id = None
         self._content = None
         self._time = None
         self._type = None
         self._source = None
         self.discriminator = None
 
+        if id is not None:
+            self.id = id
         if content is not None:
             self.content = content
         if time is not None:
@@ -61,6 +66,27 @@ class Event(object):
             self.type = type
         if source is not None:
             self.source = source
+
+    @property
+    def id(self):
+        """Gets the id of this Event.  # noqa: E501
+
+
+        :return: The id of this Event.  # noqa: E501
+        :rtype: int
+        """
+        return self._id
+
+    @id.setter
+    def id(self, id):
+        """Sets the id of this Event.
+
+
+        :param id: The id of this Event.  # noqa: E501
+        :type: int
+        """
+
+        self._id = id
 
     @property
     def content(self):

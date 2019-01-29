@@ -510,6 +510,111 @@ class DefaultApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
+    def get_clusrun_events(self, id, **kwargs):  # noqa: E501
+        """Get clusrun events  # noqa: E501
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async=True
+        >>> thread = api.get_clusrun_events(id, async=True)
+        >>> result = thread.get()
+
+        :param async bool
+        :param int id: Job id (required)
+        :param int last_id: The object id since which(but not included) the objects are requested
+        :param int count: Requested number of objects
+        :return: list[Event]
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('async'):
+            return self.get_clusrun_events_with_http_info(id, **kwargs)  # noqa: E501
+        else:
+            (data) = self.get_clusrun_events_with_http_info(id, **kwargs)  # noqa: E501
+            return data
+
+    def get_clusrun_events_with_http_info(self, id, **kwargs):  # noqa: E501
+        """Get clusrun events  # noqa: E501
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async=True
+        >>> thread = api.get_clusrun_events_with_http_info(id, async=True)
+        >>> result = thread.get()
+
+        :param async bool
+        :param int id: Job id (required)
+        :param int last_id: The object id since which(but not included) the objects are requested
+        :param int count: Requested number of objects
+        :return: list[Event]
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id', 'last_id', 'count']  # noqa: E501
+        all_params.append('async')
+        all_params.append('_return_http_data_only')
+        all_params.append('_preload_content')
+        all_params.append('_request_timeout')
+
+        params = locals()
+        for key, val in six.iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method get_clusrun_events" % key
+                )
+            params[key] = val
+        del params['kwargs']
+        # verify the required parameter 'id' is set
+        if ('id' not in params or
+                params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `get_clusrun_events`")  # noqa: E501
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']  # noqa: E501
+
+        query_params = []
+        if 'last_id' in params:
+            query_params.append(('lastId', params['last_id']))  # noqa: E501
+        if 'count' in params:
+            query_params.append(('count', params['count']))  # noqa: E501
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.select_header_accept(
+            ['application/json'])  # noqa: E501
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.select_header_content_type(  # noqa: E501
+            ['application/json'])  # noqa: E501
+
+        # Authentication setting
+        auth_settings = ['aad']  # noqa: E501
+
+        return self.api_client.call_api(
+            '/clusrun/{id}/events', 'GET',
+            path_params,
+            query_params,
+            header_params,
+            body=body_params,
+            post_params=form_params,
+            files=local_var_files,
+            response_type='list[Event]',  # noqa: E501
+            auth_settings=auth_settings,
+            async=params.get('async'),
+            _return_http_data_only=params.get('_return_http_data_only'),
+            _preload_content=params.get('_preload_content', True),
+            _request_timeout=params.get('_request_timeout'),
+            collection_formats=collection_formats)
+
     def get_clusrun_job(self, id, **kwargs):  # noqa: E501
         """Get a clusrun  # noqa: E501
 
@@ -1319,6 +1424,111 @@ class DefaultApi(object):
             post_params=form_params,
             files=local_var_files,
             response_type='list[Task]',  # noqa: E501
+            auth_settings=auth_settings,
+            async=params.get('async'),
+            _return_http_data_only=params.get('_return_http_data_only'),
+            _preload_content=params.get('_preload_content', True),
+            _request_timeout=params.get('_request_timeout'),
+            collection_formats=collection_formats)
+
+    def get_diagnostic_events(self, id, **kwargs):  # noqa: E501
+        """Get events of a diagnostic test run  # noqa: E501
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async=True
+        >>> thread = api.get_diagnostic_events(id, async=True)
+        >>> result = thread.get()
+
+        :param async bool
+        :param int id: Job id (required)
+        :param int last_id: The object id since which(but not included) the objects are requested
+        :param int count: Requested number of objects
+        :return: list[Event]
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('async'):
+            return self.get_diagnostic_events_with_http_info(id, **kwargs)  # noqa: E501
+        else:
+            (data) = self.get_diagnostic_events_with_http_info(id, **kwargs)  # noqa: E501
+            return data
+
+    def get_diagnostic_events_with_http_info(self, id, **kwargs):  # noqa: E501
+        """Get events of a diagnostic test run  # noqa: E501
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async=True
+        >>> thread = api.get_diagnostic_events_with_http_info(id, async=True)
+        >>> result = thread.get()
+
+        :param async bool
+        :param int id: Job id (required)
+        :param int last_id: The object id since which(but not included) the objects are requested
+        :param int count: Requested number of objects
+        :return: list[Event]
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id', 'last_id', 'count']  # noqa: E501
+        all_params.append('async')
+        all_params.append('_return_http_data_only')
+        all_params.append('_preload_content')
+        all_params.append('_request_timeout')
+
+        params = locals()
+        for key, val in six.iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method get_diagnostic_events" % key
+                )
+            params[key] = val
+        del params['kwargs']
+        # verify the required parameter 'id' is set
+        if ('id' not in params or
+                params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `get_diagnostic_events`")  # noqa: E501
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']  # noqa: E501
+
+        query_params = []
+        if 'last_id' in params:
+            query_params.append(('lastId', params['last_id']))  # noqa: E501
+        if 'count' in params:
+            query_params.append(('count', params['count']))  # noqa: E501
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.select_header_accept(
+            ['application/json'])  # noqa: E501
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.select_header_content_type(  # noqa: E501
+            ['application/json'])  # noqa: E501
+
+        # Authentication setting
+        auth_settings = ['aad']  # noqa: E501
+
+        return self.api_client.call_api(
+            '/diagnostics/{id}/events', 'GET',
+            path_params,
+            query_params,
+            header_params,
+            body=body_params,
+            post_params=form_params,
+            files=local_var_files,
+            response_type='list[Event]',  # noqa: E501
             auth_settings=auth_settings,
             async=params.get('async'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -2992,7 +3202,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async bool
-        :param int last_id: The object id since which(but not included) the objects are requested
+        :param str last_id:
         :param int count: Requested number of objects
         :return: list[Node]
                  If the method is called asynchronously,
@@ -3014,7 +3224,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async bool
-        :param int last_id: The object id since which(but not included) the objects are requested
+        :param str last_id:
         :param int count: Requested number of objects
         :return: list[Node]
                  If the method is called asynchronously,
@@ -3155,95 +3365,6 @@ class DefaultApi(object):
 
         return self.api_client.call_api(
             '/sync', 'POST',
-            path_params,
-            query_params,
-            header_params,
-            body=body_params,
-            post_params=form_params,
-            files=local_var_files,
-            response_type=None,  # noqa: E501
-            auth_settings=auth_settings,
-            async=params.get('async'),
-            _return_http_data_only=params.get('_return_http_data_only'),
-            _preload_content=params.get('_preload_content', True),
-            _request_timeout=params.get('_request_timeout'),
-            collection_formats=collection_formats)
-
-    def validate_user(self, **kwargs):  # noqa: E501
-        """Validate user confidential for HTTP Basic Auth  # noqa: E501
-
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.validate_user(async=True)
-        >>> result = thread.get()
-
-        :param async bool
-        :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
-        """
-        kwargs['_return_http_data_only'] = True
-        if kwargs.get('async'):
-            return self.validate_user_with_http_info(**kwargs)  # noqa: E501
-        else:
-            (data) = self.validate_user_with_http_info(**kwargs)  # noqa: E501
-            return data
-
-    def validate_user_with_http_info(self, **kwargs):  # noqa: E501
-        """Validate user confidential for HTTP Basic Auth  # noqa: E501
-
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.validate_user_with_http_info(async=True)
-        >>> result = thread.get()
-
-        :param async bool
-        :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
-        """
-
-        all_params = []  # noqa: E501
-        all_params.append('async')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
-        params = locals()
-        for key, val in six.iteritems(params['kwargs']):
-            if key not in all_params:
-                raise TypeError(
-                    "Got an unexpected keyword argument '%s'"
-                    " to method validate_user" % key
-                )
-            params[key] = val
-        del params['kwargs']
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = []
-        local_var_files = {}
-
-        body_params = None
-        # HTTP header `Accept`
-        header_params['Accept'] = self.api_client.select_header_accept(
-            ['application/json'])  # noqa: E501
-
-        # HTTP header `Content-Type`
-        header_params['Content-Type'] = self.api_client.select_header_content_type(  # noqa: E501
-            ['application/json'])  # noqa: E501
-
-        # Authentication setting
-        auth_settings = ['aad']  # noqa: E501
-
-        return self.api_client.call_api(
-            '/validation', 'GET',
             path_params,
             query_params,
             header_params,

@@ -55,6 +55,7 @@ Class | Method | HTTP request | Description
 *DefaultApi* | [**create_clusrun_job**](docs/DefaultApi.md#create_clusrun_job) | **POST** /clusrun | Create a clusrun
 *DefaultApi* | [**create_diagnostic_job**](docs/DefaultApi.md#create_diagnostic_job) | **POST** /diagnostics | Create a diagnostic test run
 *DefaultApi* | [**get_clus_run_job_summary**](docs/DefaultApi.md#get_clus_run_job_summary) | **GET** /dashboard/clusrun | Get summary of ClusRun jobs
+*DefaultApi* | [**get_clusrun_events**](docs/DefaultApi.md#get_clusrun_events) | **GET** /clusrun/{id}/events | Get clusrun events
 *DefaultApi* | [**get_clusrun_job**](docs/DefaultApi.md#get_clusrun_job) | **GET** /clusrun/{id} | Get a clusrun
 *DefaultApi* | [**get_clusrun_job_aggregation_result**](docs/DefaultApi.md#get_clusrun_job_aggregation_result) | **GET** /clusrun/{id}/aggregationResult | Get aggregation result of a clusrun job
 *DefaultApi* | [**get_clusrun_jobs**](docs/DefaultApi.md#get_clusrun_jobs) | **GET** /clusrun | Get a list of clusruns
@@ -63,6 +64,7 @@ Class | Method | HTTP request | Description
 *DefaultApi* | [**get_clusrun_task**](docs/DefaultApi.md#get_clusrun_task) | **GET** /clusrun/{id}/tasks/{taskId} | Get a task of a clusrun
 *DefaultApi* | [**get_clusrun_task_result**](docs/DefaultApi.md#get_clusrun_task_result) | **GET** /clusrun/{id}/tasks/{taskId}/result | Get a task result of a clusrun
 *DefaultApi* | [**get_clusrun_tasks**](docs/DefaultApi.md#get_clusrun_tasks) | **GET** /clusrun/{id}/tasks | Get tasks of a clusrun
+*DefaultApi* | [**get_diagnostic_events**](docs/DefaultApi.md#get_diagnostic_events) | **GET** /diagnostics/{id}/events | Get events of a diagnostic test run
 *DefaultApi* | [**get_diagnostic_job**](docs/DefaultApi.md#get_diagnostic_job) | **GET** /diagnostics/{id} | Get a diagnostic test run
 *DefaultApi* | [**get_diagnostic_job_aggregation_result**](docs/DefaultApi.md#get_diagnostic_job_aggregation_result) | **GET** /diagnostics/{id}/aggregationResult | Get aggregation result of a diagnostic job
 *DefaultApi* | [**get_diagnostic_job_summary**](docs/DefaultApi.md#get_diagnostic_job_summary) | **GET** /dashboard/diagnostics | Get summary of diagnostic jobs
@@ -82,7 +84,6 @@ Class | Method | HTTP request | Description
 *DefaultApi* | [**get_node_summary**](docs/DefaultApi.md#get_node_summary) | **GET** /dashboard/nodes | Get summary of nodes
 *DefaultApi* | [**get_nodes**](docs/DefaultApi.md#get_nodes) | **GET** /nodes | Get a list of nodes
 *DefaultApi* | [**sync_scripts**](docs/DefaultApi.md#sync_scripts) | **POST** /sync | Sync diagnostic and metric scripts from GitHub
-*DefaultApi* | [**validate_user**](docs/DefaultApi.md#validate_user) | **GET** /validation | Validate user confidential for HTTP Basic Auth
 
 
 ## Documentation For Models
@@ -127,7 +128,15 @@ Class | Method | HTTP request | Description
 ## Documentation For Authorization
 
 
-## basic_auth
+## aad
 
-- **Type**: HTTP basic authentication
+- **Type**: OAuth
+- **Flow**: application
+- **Authorization URL**: 
+- **Scopes**: N/A
+
+
+## Author
+
+
 

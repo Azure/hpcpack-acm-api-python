@@ -17,7 +17,6 @@ import re  # noqa: F401
 import six
 
 from hpc_acm.models.diagnotic_test import DiagnoticTest  # noqa: F401,E501
-from hpc_acm.models.event import Event  # noqa: F401,E501
 from hpc_acm.models.job_state import JobState  # noqa: F401,E501
 from hpc_acm.models.job_type import JobType  # noqa: F401,E501
 
@@ -43,8 +42,7 @@ class Job(object):
         'diagnostic_test': 'DiagnoticTest',
         'state': 'JobState',
         'target_nodes': 'list[str]',
-        'progress': 'int',
-        'events': 'list[Event]',
+        'progress': 'float',
         'requeue_count': 'int',
         'fail_job_on_task_failure': 'bool',
         'created_at': 'datetime',
@@ -60,14 +58,13 @@ class Job(object):
         'state': 'state',
         'target_nodes': 'targetNodes',
         'progress': 'progress',
-        'events': 'events',
         'requeue_count': 'requeueCount',
         'fail_job_on_task_failure': 'failJobOnTaskFailure',
         'created_at': 'createdAt',
         'updated_at': 'updatedAt'
     }
 
-    def __init__(self, type=None, id=None, name=None, command_line=None, diagnostic_test=None, state=None, target_nodes=None, progress=None, events=None, requeue_count=None, fail_job_on_task_failure=None, created_at=None, updated_at=None):  # noqa: E501
+    def __init__(self, type=None, id=None, name=None, command_line=None, diagnostic_test=None, state=None, target_nodes=None, progress=None, requeue_count=None, fail_job_on_task_failure=None, created_at=None, updated_at=None):  # noqa: E501
         """Job - a model defined in Swagger"""  # noqa: E501
 
         self._type = None
@@ -78,7 +75,6 @@ class Job(object):
         self._state = None
         self._target_nodes = None
         self._progress = None
-        self._events = None
         self._requeue_count = None
         self._fail_job_on_task_failure = None
         self._created_at = None
@@ -101,8 +97,6 @@ class Job(object):
             self.target_nodes = target_nodes
         if progress is not None:
             self.progress = progress
-        if events is not None:
-            self.events = events
         if requeue_count is not None:
             self.requeue_count = requeue_count
         if fail_job_on_task_failure is not None:
@@ -276,7 +270,7 @@ class Job(object):
         Job progress  # noqa: E501
 
         :return: The progress of this Job.  # noqa: E501
-        :rtype: int
+        :rtype: float
         """
         return self._progress
 
@@ -287,33 +281,10 @@ class Job(object):
         Job progress  # noqa: E501
 
         :param progress: The progress of this Job.  # noqa: E501
-        :type: int
+        :type: float
         """
 
         self._progress = progress
-
-    @property
-    def events(self):
-        """Gets the events of this Job.  # noqa: E501
-
-        Events happened in the job  # noqa: E501
-
-        :return: The events of this Job.  # noqa: E501
-        :rtype: list[Event]
-        """
-        return self._events
-
-    @events.setter
-    def events(self, events):
-        """Sets the events of this Job.
-
-        Events happened in the job  # noqa: E501
-
-        :param events: The events of this Job.  # noqa: E501
-        :type: list[Event]
-        """
-
-        self._events = events
 
     @property
     def requeue_count(self):
