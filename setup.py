@@ -3,7 +3,7 @@
 from setuptools import setup, find_packages  # noqa: H301
 
 NAME = "hpc-acm"
-VERSION = "1.3.0"
+VERSION = "1.3.1"
 REQUIRES = ["urllib3 >= 1.15", "six >= 1.10", "certifi", "python-dateutil"]
 
 with open("README.md", "r") as fh:
@@ -30,4 +30,7 @@ setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ),
+    package_data={
+        'hpc_acm': ['3rdpartylicenses.txt']
+    },
 )
