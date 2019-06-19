@@ -2,13 +2,17 @@
 language: python
 python:
   - "2.7"
-  - "3.2"
-  - "3.3"
-  - "3.4"
   - "3.5"
-  #- "3.5-dev" # 3.5 development branch
-  #- "nightly" # points to the latest development branch e.g. 3.6-dev
+  - "3.6"
+matrix:
+  include:
+    - python: "3.7"
+      dist: xenial  # required for Python >= 3.7
+  allow_failures:
+    - python: "3.7"
 # command to install dependencies
-install: "pip install -r requirements.txt"
+install: "pip install flake8 -r requirements.txt"
+# stop the build if there are Python syntax errors or undefined names
+before_script: flake8 . --count --select=E9,F63,F72,F82 --show-source --statistics
 # command to run tests
 script: nosetests
